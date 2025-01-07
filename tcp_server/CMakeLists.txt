@@ -15,6 +15,7 @@ add_subdirectory(src)
 add_subdirectory(include/version)
 add_subdirectory(include/mvc)
 add_subdirectory(include/app_gui)
+add_subdirectory(include/app_prm)
 
 # подключается тестирование
 enable_testing()

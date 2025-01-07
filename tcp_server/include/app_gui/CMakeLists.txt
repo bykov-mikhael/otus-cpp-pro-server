@@ -4,8 +4,6 @@ project(app-gui VERSION 0.0.1)
 
 add_library(app-gui STATIC  wnd.hpp wnd.cpp)
 
-
-
 set_target_properties(app-gui PROPERTIES
   CXX_STANDARD 17
   CXX_STANDARD_REQUIRED ON
