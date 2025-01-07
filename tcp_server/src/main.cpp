@@ -1,12 +1,12 @@
 #include "main.hpp"
 
-int thGUI() {
-  std::cout << "thread gui" << std::endl;
-
-  return Fl::run();
-}
+void thGUI() { std::cout << "thread gui" << std::endl; }
 
 void task2() { std::cout << "task 2" << std::endl; }
+
+/**
+ * TODO использовать MVC паттерн
+ */
 
 int main() {
   // Get the current time as a time_point
@@ -36,14 +36,6 @@ int main() {
   std::cout << ipaddr << std::endl;
 
   std::cout << port << std::endl;
-
-  wnd *app_wnd = new wnd(240, 170, "Server App");
-
-  app_wnd->setIPAddr(ipaddr.c_str());
-  app_wnd->setPort(port.c_str());
-  app_wnd->addLog("test msg");
-
-  app_wnd->show();
 
   /*
    * TCP Server
