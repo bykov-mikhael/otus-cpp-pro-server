@@ -9,7 +9,7 @@ add_library(mvc STATIC  IController.hpp Controller.hpp Controller.cpp
 set_target_properties(mvc PROPERTIES
   CXX_STANDARD 17
   CXX_STANDARD_REQUIRED ON
-  RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin
+  RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib #<--??? надо ли
 )
 
 find_package(FLTK REQUIRED)

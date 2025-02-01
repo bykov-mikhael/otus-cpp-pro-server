@@ -14,7 +14,7 @@ add_subdirectory(src)
 # подключается статическая бибилотека version
 add_subdirectory(include/version)
 add_subdirectory(include/mvc)
-add_subdirectory(include/app_gui)
+#add_subdirectory(include/app_gui)
 add_subdirectory(include/app_prm)
 
 # подключается тестирование
